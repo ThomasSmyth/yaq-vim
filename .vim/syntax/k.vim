@@ -771,6 +771,7 @@ syn keyword kLocal zx
 syn keyword kLocal zy
 syn keyword kLocal zz
 hi link kLocal Underlined
+
 " k primitives from .Q.res
 syn keyword kPrimitive abs
 syn keyword kPrimitive acos
@@ -898,6 +899,8 @@ syn keyword qLib \.o\.o
 syn keyword qLib \.o\.t
 syn keyword qLib \.q\.aj
 syn keyword qLib \.q\.aj0
+syn keyword qLib \.q\.ajf
+syn keyword qLib \.q\.ajf0
 syn keyword qLib \.q\.all
 syn keyword qLib \.q\.and
 syn keyword qLib \.q\.any
@@ -1212,8 +1215,8 @@ syn match qLib "\.z\.ts"
 syn match qLib "\.z\.u"
 syn match qLib "\.z\.vs"
 syn match qLib "\.z\.w"
-syn match qLib "\.z\.wo"
 syn match qLib "\.z\.wc"
+syn match qLib "\.z\.wo"
 syn match qLib "\.z\.ws"
 syn match qLib "\.z\.x"
 syn match qLib "\.z\.z"
@@ -1244,7 +1247,7 @@ syn match kError "^k)"
 
 " symbols and specialcase file+connection handles
 syn match kSymbol "\(`\<[a-zA-Z0-9\.][a-zA-Z0-9_\.]*\>\)"
-syn match kHandle "\`:\{1,2}\([0-9a-zA-Z\\/.]\+:\=\)\{1,4}"
+syn match kHandle "\`:\{1,2}\([0-9a-zA-Z_\\/.]\+:\=\)\{1,4}"
 
 " attributes `p#, `g#, `s# and `u#
 syn match kPreproc /`[spgu]#/
