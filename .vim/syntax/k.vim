@@ -140,6 +140,7 @@ syn keyword qLib \.h\.c0
 syn keyword qLib \.h\.c1
 syn keyword qLib \.h\.cd
 syn keyword qLib \.h\.code
+syn keyword qLib \.h\.d
 syn keyword qLib \.h\.data
 syn keyword qLib \.h\.eb
 syn keyword qLib \.h\.ec
@@ -153,6 +154,7 @@ syn keyword qLib \.h\.hb
 syn keyword qLib \.h\.hc
 syn keyword qLib \.h\.he
 syn keyword qLib \.h\.hn
+syn keyword qLib \.h\.hnz
 syn keyword qLib \.h\.hp
 syn keyword qLib \.h\.hr
 syn keyword qLib \.h\.ht
@@ -177,6 +179,7 @@ syn keyword qLib \.h\.text
 syn keyword qLib \.h\.tx
 syn keyword qLib \.h\.ty
 syn keyword qLib \.h\.uh
+syn keyword qLib \.h\.val
 syn keyword qLib \.h\.xd
 syn keyword qLib \.h\.xmp
 syn keyword qLib \.h\.xs
@@ -185,6 +188,7 @@ syn keyword qLib \.j\.J
 syn keyword qLib \.j\.e
 syn keyword qLib \.j\.es
 syn keyword qLib \.j\.j
+syn keyword qLib \.j\.jd
 syn keyword qLib \.j\.k
 syn keyword qLib \.j\.q
 syn keyword qLib \.j\.s
@@ -221,22 +225,18 @@ syn keyword qLib \.q\.attr
 syn keyword qLib \.q\.avgs
 syn keyword qLib \.q\.ceiling
 syn keyword qLib \.q\.cols
-syn keyword qLib \.q\.cor
 syn keyword qLib \.q\.count
-syn keyword qLib \.q\.cov
 syn keyword qLib \.q\.cross
 syn keyword qLib \.q\.csv
 syn keyword qLib \.q\.cut
 syn keyword qLib \.q\.deltas
 syn keyword qLib \.q\.desc
-syn keyword qLib \.q\.dev
 syn keyword qLib \.q\.differ
 syn keyword qLib \.q\.distinct
 syn keyword qLib \.q\.dsave
 syn keyword qLib \.q\.each
 syn keyword qLib \.q\.ej
 syn keyword qLib \.q\.ema
-syn keyword qLib \.q\.enlist
 syn keyword qLib \.q\.eval
 syn keyword qLib \.q\.except
 syn keyword qLib \.q\.fby
@@ -261,7 +261,6 @@ syn keyword qLib \.q\.inter
 syn keyword qLib \.q\.inv
 syn keyword qLib \.q\.key
 syn keyword qLib \.q\.keys
-syn keyword qLib \.q\.list
 syn keyword qLib \.q\.lj
 syn keyword qLib \.q\.ljf
 syn keyword qLib \.q\.load
@@ -334,7 +333,6 @@ syn keyword qLib \.q\.union
 syn keyword qLib \.q\.upper
 syn keyword qLib \.q\.upsert
 syn keyword qLib \.q\.value
-syn keyword qLib \.q\.var
 syn keyword qLib \.q\.view
 syn keyword qLib \.q\.views
 syn keyword qLib \.q\.vs
@@ -353,10 +351,12 @@ syn keyword qLib \.q\.xlog
 syn keyword qLib \.q\.xprev
 syn keyword qLib \.q\.xrank
 syn keyword qLib \.Q\.A
+syn keyword qLib \.Q\.Aa
 syn keyword qLib \.Q\.BP
 syn keyword qLib \.Q\.Cf
 syn keyword qLib \.Q\.DL
 syn keyword qLib \.Q\.IN
+syn keyword qLib \.Q\.K
 syn keyword qLib \.Q\.L
 syn keyword qLib \.Q\.Ll
 syn keyword qLib \.Q\.Lp
@@ -374,6 +374,7 @@ syn keyword qLib \.Q\.a1
 syn keyword qLib \.Q\.a2
 syn keyword qLib \.Q\.addmonths
 syn keyword qLib \.Q\.addr
+syn keyword qLib \.Q\.ajf
 syn keyword qLib \.Q\.an
 syn keyword qLib \.Q\.b6
 syn keyword qLib \.Q\.bc
@@ -381,6 +382,7 @@ syn keyword qLib \.Q\.bd
 syn keyword qLib \.Q\.bs
 syn keyword qLib \.Q\.bp
 syn keyword qLib \.Q\.bt
+syn keyword qLib \.Q\.btoa
 syn keyword qLib \.Q\.btx
 syn keyword qLib \.Q\.bu
 syn keyword qLib \.Q\.bv
@@ -391,13 +393,17 @@ syn keyword qLib \.Q\.dbg
 syn keyword qLib \.Q\.dd
 syn keyword qLib \.Q\.def
 syn keyword qLib \.Q\.dpft
+syn keyword qLib \.Q\.dpfts
 syn keyword qLib \.Q\.dpt
+syn keyword qLib \.Q\.dpts
 syn keyword qLib \.Q\.dr
 syn keyword qLib \.Q\.dsftg
 syn keyword qLib \.Q\.dt
 syn keyword qLib \.Q\.dw
 syn keyword qLib \.Q\.en
+syn keyword qLib \.Q\.ens
 syn keyword qLib \.Q\.enx
+syn keyword qLib \.Q\.enxs
 syn keyword qLib \.Q\.err
 syn keyword qLib \.Q\.f
 syn keyword qLib \.Q\.fc
@@ -410,11 +416,13 @@ syn keyword qLib \.Q\.fp
 syn keyword qLib \.Q\.fpn
 syn keyword qLib \.Q\.fps
 syn keyword qLib \.Q\.fqk
+syn keyword qLib \.Q\.fql
 syn keyword qLib \.Q\.fs
 syn keyword qLib \.Q\.fsn
 syn keyword qLib \.Q\.ft
 syn keyword qLib \.Q\.fu
 syn keyword qLib \.Q\.gc
+syn keyword qLib \.Q\.gz
 syn keyword qLib \.Q\.hap
 syn keyword qLib \.Q\.hdpf
 syn keyword qLib \.Q\.hg
@@ -430,6 +438,7 @@ syn keyword qLib \.Q\.k
 syn keyword qLib \.Q\.l
 syn keyword qLib \.Q\.lu
 syn keyword qLib \.Q\.n
+syn keyword qLib \.Q\.nv
 syn keyword qLib \.Q\.nA
 syn keyword qLib \.Q\.nct
 syn keyword qLib \.Q\.opt
@@ -443,6 +452,7 @@ syn keyword qLib \.Q\.pf
 syn keyword qLib \.Q\.pl
 syn keyword qLib \.Q\.pl0
 syn keyword qLib \.Q\.pm
+syn keyword qLib \.Q\.prf0
 syn keyword qLib \.Q\.prr
 syn keyword qLib \.Q\.ps
 syn keyword qLib \.Q\.pt
@@ -459,16 +469,19 @@ syn keyword qLib \.Q\.s
 syn keyword qLib \.Q\.s1
 syn keyword qLib \.Q\.s2
 syn keyword qLib \.Q\.sbt
+syn keyword qLib \.Q\.sha1
 syn keyword qLib \.Q\.srr
 syn keyword qLib \.Q\.sw
 syn keyword qLib \.Q\.t
 syn keyword qLib \.Q\.t0
+syn keyword qLib \.Q\.ts
 syn keyword qLib \.Q\.tab
 syn keyword qLib \.Q\.trp
 syn keyword qLib \.Q\.tt
 syn keyword qLib \.Q\.tx
 syn keyword qLib \.Q\.ty
 syn keyword qLib \.Q\.ua
+syn keyword qLib \.Q\.unm
 syn keyword qLib \.Q\.v
 syn keyword qLib \.Q\.view
 syn keyword qLib \.Q\.vp
@@ -484,6 +497,7 @@ syn keyword qLib \.Q\.xy
 
 " hardcode the .z. functions (no way to get them automatically)
 syn match qLib "\.z\.D"
+syn match qLib "\.z\.H"
 syn match qLib "\.z\.K"
 syn match qLib "\.z\.N"
 syn match qLib "\.z\.P"
@@ -517,9 +531,11 @@ syn match qLib "\.z\.pi"
 syn match qLib "\.z\.pm"
 syn match qLib "\.z\.po"
 syn match qLib "\.z\.pp"
+syn match qLib "\.z\.pq"
 syn match qLib "\.z\.ps"
 syn match qLib "\.z\.pw"
 syn match qLib "\.z\.q"
+syn match qLib "\.z\.r"
 syn match qLib "\.z\.s"
 syn match qLib "\.z\.t"
 syn match qLib "\.z\.ts"
