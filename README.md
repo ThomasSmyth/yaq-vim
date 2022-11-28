@@ -16,20 +16,21 @@ This repo adds special highlighting for:
 - Most keywords up to kdb+ v4.0 2022.09.30.
 
 ## Installation
+This guide assumes your vim configuration files are located within
+your home directory.
+
 Ensure syntax highlighting is enabled in `~/.vimrc`.
 ```
 syntax on
 ```
 
-Copy the files in the [`.vim`](.vim) subdirectory to your local directory
-(probably `$HOME/.vim/`).
+Copy the `\*.vim` files from [`syntax`](syntax) and [`indent`](indent)
+to their corresponding directories under `~/.vim/`, creating them if need be.
 
-If you already have a [`filetype.vim`](.vim/filetype.vim) then just insert the
-additional k & q lines.
+If it does not exist then copy [`filetype.vim`](filetype.vim) to `~/.vim/`.
+If [`filetype.vim`](filetype.vim) already exists then just insert the
+relevant k & q lines from this repo.
 
-Copy the `\*.vim` files from [`syntax`](.vim/syntax) and [`indent`](.vim/indent)
-to their corresponding directories, creating them if need be.
-
-Most of the work is done in [`k.vim`](.vim/syntax/k.vim) (which is loaded into 
-[`q.vim`](.vim/syntax/q.vim)) as q "only" adds the functions in `.q` as
+Most of the work is done in [`k.vim`](syntax/k.vim) (which is loaded into 
+[`q.vim`](syntax/q.vim)) as q "only" adds the functions in `.q` as
 primitives, and relaxes the restriction on underscores in names.
