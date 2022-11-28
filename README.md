@@ -13,15 +13,16 @@ There is additional inspiration from [qvim](https://github.com/patmok/qvim) by
 This repo adds special highlighting for:
 - Query keywords, `select`, `update`, `upsert`, `insert`, `exec`, `delete`,
  `by` and `from`.
-- Local single and double letter variables, e.g. `x`, `y`, `z`, `d`, `t`, `xx`,
-`yy`, `zz` (but exclude built in keywords like `aj` and `lj`).
+- Most keywords up to kdb+ v4.0 2022.09.30.
 
 ## Installation
-Copy [`.vimrc`](.vimrc) to `$HOME/.vimrc` if you don't have one already, or
-copy the settings to your existing file.
+Ensure syntax highlighting is enabled in `~/.vimrc`.
+```
+syntax on
+```
 
-Copy the files in the [`.vim`](.vim) subdirectory to your vim home directory
-(probably `$HOME/.vim`).
+Copy the files in the [`.vim`](.vim) subdirectory to your local directory
+(probably `$HOME/.vim/`).
 
 If you already have a [`filetype.vim`](.vim/filetype.vim) then just insert the
 additional k & q lines.
