@@ -592,7 +592,7 @@ syn match kSpecialChar "\\[abcfnrtv\\]" contained
 " special singlechar string before $
 syn match kCast /"\a"\$/
 
-if !exists("did_k_syntax_inits")
+"if !exists("did_k_syntax_inits")
  let did_k_syntax_inits = 1
  hi link kBoolean Boolean
  hi link kCast Type
@@ -621,7 +621,7 @@ if !exists("did_k_syntax_inits")
  hi link kSymbol Constant
  hi link kTodo Todo
  hi link qLib Special
- endif
+" endif
 
 let b:current_syntax = "k"
 

@@ -166,7 +166,7 @@ syn keyword qFunction xrank
 syn match qLang "^k)"
 syn match qError "^q)"
 
-if !exists("did_q_syntax_inits")
+"if !exists("did_q_syntax_inits")
  let did_q_syntax_inits = 1
  hi link qError kError
  hi link qFunction kFunction
@@ -174,7 +174,7 @@ if !exists("did_q_syntax_inits")
  hi link qIdentifier kIdentifier
  hi link qLang kLang
  hi link qPlaceholder kPlaceholder
- endif
+" endif
 
 let b:current_syntax = "q"
 
